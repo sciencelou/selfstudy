@@ -15,7 +15,7 @@ import sympy
 numpy.random.seed(123)
 
 
-def random_numbers(range_min=2, range_max=10, num_labels=1):
+def random_labels(range_min=2, range_max=10, num_labels=1):
     '''
     Return random numbers in given range, n prime and non-prime odd numbers.
     >>> int(random_numbers(7, 9, 1)[1])
@@ -32,7 +32,7 @@ def random_numbers(range_min=2, range_max=10, num_labels=1):
     primes_in_range = numpy.fromiter(prime_generator, dtype=numpy.uint32,
                                      count=-1)
 
-    # Generate all numbers in range
+    # Generate all odd numbers in range
     numbers_in_range = numpy.arange(range_min, range_max + 1, 2,
                                     dtype=numpy.uint32)
 
@@ -43,8 +43,8 @@ def random_numbers(range_min=2, range_max=10, num_labels=1):
     if not non_primes.size:
         return None
 
-    chosen_primes = numpy.random.choice(non_primes, num_labels)
-    chosen_non_primes = numpy.random.choice(primes_in_range, num_labels)
+    chosen_non_primes = numpy.random.choice(non_primes, num_labels)
+    chosen_primes = numpy.random.choice(primes_in_range, num_labels)
 
     return(chosen_primes, chosen_non_primes)
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     NUMBER_LABELS = 10
 
     # Get random numbers
-    LABELS = random_numbers(RANGE_MIN, RANGE_MAX, NUMBER_LABELS)
+    LABELS = random_labels(RANGE_MIN, RANGE_MAX, NUMBER_LABELS)
     # Convert output
     LABEL_ARRAY = numpy.asarray(LABELS).T
 

@@ -40,15 +40,12 @@ The goal of the questions is to track the hypotheses as closely as possible, and
 Also, the times where I answer the questions is rather random. After 30 min, caffeine concentration should peak, and theanine concentration after 1h-2h. If I see interesting temporal effects, I will just run a follow-up experiment with different parameters.
 Also, I don't see any obvious and cheap way to test the 'improved memory' hypothesis, so I will skip this in my first trial.
 
-* Narrowness of focus/attention
-* Motivation
-* Stress/Anxiety
-* Calmness?
-* Mood
-
 Questionnaire is at [Google Forms](https://goo.gl/forms/VK3WTDPohuMlRkbz1).
 
 ## Hypothesis Testing
+The questions and the timing constrain the meaningful hypotheses I can test.
+Simple hypotheses are:
+ 
 
 ## Open Problems
 ### Hypothesis Formalization

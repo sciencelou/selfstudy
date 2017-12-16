@@ -34,6 +34,8 @@ Theanine can take up to 2h to reach maximum level, so a 1h and 2h repetition mai
 ## Open Problems
 ### Hypothesis Formalization
 Effects are (discrete?) Gaussians around mean, mean&var change due to drugs?
+I need more hypotheses, e.g. no effect = one gaussian/mean = 0
+Also, Information Criteria for the evaluation are missing.
 ### Model specification
 * Bayesian Parameter Estimation with pymc3
 ### Data Pipeline
